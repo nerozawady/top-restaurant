@@ -1,0 +1,233 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui;
+}
+
+:root {
+  --color-0-1: hsl(0, 0%, 100%);
+  --color-0-2: hsl(0, 0%, 97%);
+  --color-0-3: hsl(0, 0%, 94%);
+  --color-1-1: hsl(349, 71%, 59%);
+  --color-1-2: hsl(349, 71%, 55%);
+  --color-1-3: hsl(349, 71%, 51%);
+  --color-1-4: hsl(349, 71%, 47%);
+  --color-1-5: hsl(349, 71%, 43%);
+
+  --main-navigation--button-width: 101px;
+}
+
+.hidden.hidden {
+  display: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.outer-background {
+  min-height: 100vh;
+  background-color: var(--color-0-2);
+}
+
+.inner-background {
+  min-height: 100vh;
+  background-color: var(--color-0-1);
+  margin-inline: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.main-heading {
+  font-size: 3rem;
+  font-weight: normal;
+  text-align: center;
+  cursor: default;
+}
+
+.main-navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.main-navigation__item {
+}
+
+.main-navigation__button {
+  color: white;
+  background-color: var(--color-1-3);
+  border: 1px solid var(--color-1-3);
+  border-radius: 6px;
+  font-size: 1.25rem;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  width: var(--main-navigation--button-width);
+}
+
+/* .main-navigation__button--active {
+  background-color: var(--color-1-2);
+  border-color: var(--color-1-2);
+} */
+
+.main-navigation__button:hover,
+.main-navigation__button:focus {
+  background-color: var(--color-1-2);
+  border-color: var(--color-1-2);
+}
+
+.main-navigation__button:active {
+  background-color: var(--color-1-1);
+  border-color: var(--color-1-1);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info {
+  display: flex;
+  gap: 1rem;
+}
+
+.info__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+
+.info__heading {
+  font-size: 1.5rem;
+}
+
+.info__heading::after {
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 15rem;
+  height: 2px;
+  background-color: var(--color-1-3);
+}
+
+.info__text {
+}
+
+.info__image {
+  width: 10rem;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  border: 2px solid var(--color-1-3);
+}
+
+.menu-navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.menu-navigation__item {
+}
+
+.menu-navigation__button {
+  background-color: var(--color-0-3);
+  border: 2px solid var(--color-1-3);
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+}
+
+.menu-navigation__button:hover,
+.menu-navigation__button:focus {
+  background-color: var(--color-0-2);
+}
+
+.menu-navigation__button:active {
+  background-color: var(--color-0-1);
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-container__heading {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-1-3);
+}
+
+.info {
+}
